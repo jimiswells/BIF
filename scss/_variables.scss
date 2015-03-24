@@ -1,0 +1,220 @@
+// colors
+
+$color-1: #ffffff; // White
+$color-2: #196a74; // Elm
+$color-3: #001426; // Midnight
+
+// fonts 
+
+$primary-font: sans-serif;
+
+
+
+
+
+$futura: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+
+
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.middle-align {
+    @include vertical-align;
+}
+
+
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+
+
+ .ghost-btn {
+ /* position: absolute;
+     bottom: -40px;
+     margin: 0 auto; */
+    margin-top: 30px;
+  
+  font-weight:bold;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #000;
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 0px;
+  background-clip: padding-box;
+  font-size: 1em;
+  padding: .5em 1.5em;
+ 
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background: #ffffff;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  zoom: 1;
+  -webkit-backface-visibility: hidden;
+  
+}
+.ghost-btn:hover {
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  background-color: #383838;
+  color: #ffffff;
+}
+.ghost-btn:focus {
+  outline: none;
+}
+/*********************PAGE-TRANSITIONS---------------*/
+
+
+/*---.view.ng-enter { 
+  animation: slideInRight 0.5s both ease-in; z-index: 8888; 
+  -webkit-animation: slideInRight 0.5s both ease-in; z-index: 8888; 
+}
+.view.ng-leave { 
+  animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+  -webkit-animation: slideOutLeft 0.5s both ease-in; z-index: 9999; 
+}
+
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+
+@keyframes slideInRight {
+    from    { transform: translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+@-webkit-keyframes slideInRight {
+    from    { transform: translateX(100%); }
+    to      { transform: translateX(0); }
+}
+*/
+
+
+.view.ng-enter {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    opacity: 0;
+}
+
+.view.ng-enter-active {
+    opacity: 1;
+}
+.view.ng-leave {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    opacity: 1;
+}
+
+.view.ng-leave-active {
+    opacity: 0;
+}
+
+
+
+li.ng-move {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+
+li.ng-move-active {
+    opacity: 1;
+}
+
+
+
+
+li.ng-move {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+
+li.ng-move-active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.desaturate { -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+/*********************PAGE-TRANSITIONS---------------*/

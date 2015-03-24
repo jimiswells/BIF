@@ -1,0 +1,1 @@
+var myApp=angular.module("myApp",["ngRoute","ngAnimate"]);myApp.config(["$routeProvider",function(e){e.when("/home",{templateUrl:"partials/home-page.html",reloadOnSearch:!1}).when("/guests",{templateUrl:"partials/guests.html"}).otherwise({redirectTo:"/home"})}]);
