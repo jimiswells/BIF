@@ -83,6 +83,10 @@ Main Components
 		img:nth-child(3) {
 			@include transform(translateZ(400px));
 		}
+        
+        img:nth-child(3) {
+			@include transform(translateZ(800px));
+		}
 	}
 
 	.no-touch.no-preserve-3d & {

@@ -1,7 +1,21 @@
-myApp.controller('projectController', ['$scope', '$http', '$routeParams', '$anchorScroll', '$location',
+myApp.controller('artistsController', ['$scope', '$http', '$routeParams', '$anchorScroll', '$location',
     function ($scope, $http, $routeParams, $anchorScroll, $location) {
         
+              $http.get('artists.json').success(function (data) {
             
+            
+ 
+
+
+            /*put json data into variable*/
+
+            $scope.artists = data;
+                  
+                  console.log ($scope.artists);
+            
+                  
+                  
+              });
             
  
 

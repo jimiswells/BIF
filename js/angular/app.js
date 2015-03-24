@@ -22,8 +22,8 @@ myApp.config(['$routeProvider' , function($routeProvider) {
        
     }).
     
-    when ('/guests' , {
-        templateUrl: 'partials/guests.html'
+    when ('/artists' , {
+        templateUrl: 'partials/artists.html'
     }).
     
     

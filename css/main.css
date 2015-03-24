@@ -157,7 +157,7 @@ body {
   margin: 0; }
 
 header {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0);
   width: 100%;
   position: fixed;
   top: 0;
@@ -168,10 +168,8 @@ header {
 .main-nav {
   width: 600px;
   margin: 0 auto;
-  position: absolute;
   left: 0;
-  right: 0;
-  top: 500px; }
+  right: 0; }
   .main-nav ul {
     text-align: center; }
   .main-nav li {
@@ -404,6 +402,18 @@ Main Components
       -ms-transform: translateZ(400px);
       -o-transform: translateZ(400px);
       transform: translateZ(400px); }
+    .no-touch .cd-floating-background img:nth-child(3) {
+      -webkit-transform: translateZ(800px);
+      -moz-transform: translateZ(800px);
+      -ms-transform: translateZ(800px);
+      -o-transform: translateZ(800px);
+      transform: translateZ(800px); }
   .no-touch.no-preserve-3d .cd-floating-background {
     /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
     position: relative; }
+
+.artists-image {
+  height: 300px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat; }
